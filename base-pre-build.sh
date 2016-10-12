@@ -10,7 +10,7 @@ fi
 
 # upgrade base system
 sed -i 's/archive\.ubuntu\.com/cn.archive.ubuntu.com/' /etc/apt/sources.list
-echo 'deb http://archive.canonical.com/ubuntu trusty partner' >> /etc/apt/sources.list
-echo 'deb-src http://archive.canonical.com/ubuntu trusty partner' >> /etc/apt/sources.list
+echo 'deb http://archive.canonical.com/ubuntu xenial partner' >> /etc/apt/sources.list
+echo 'deb-src http://archive.canonical.com/ubuntu xenial partner' >> /etc/apt/sources.list
 apt-get update -qq
 apt-get upgrade -qqy -o Dpkg::Options::="--force-confold"
